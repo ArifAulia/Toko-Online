@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
-    <title>Toko Online</title>
+    <title>MoonStore</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
@@ -11,9 +11,9 @@
     <!-- navigasi bar -->
     <nav class="navbar bg-info" style="height: 60px;">
         <div class="container">
-        <div class="container">
+        <div>
           <a class="navbar-brand">
-            <img src="Gambar WhatsApp 2023-09-28 pukul 00.58.38.jpg" alt="Logo" width="30" height="30" style="border-radius: 100%;" class="d-inline-block align-text-top"><u>MoonStore</u>
+            <img src="Gambar WhatsApp 2023-09-28 pukul 00.58.38.jpg" alt="Logo" width="30" height="30" style="border-radius: 100%; margin-right: 10px;" class="d-inline-block align-text-top"><u>MoonStore</u>
           </a>
         </div>
     </div>
@@ -21,8 +21,9 @@
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+  <div class="container">
     <!-- corousel -->
-    <div class="container-fluid corousel-contain py-4">
+    <div class="col-12 corousel-contain py-4">
         <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide col-lg-8 offset-lg-2">
             <div class="carousel-indicators">
@@ -58,20 +59,22 @@
     </div>
 
     <!-- jenis produk -->
-    <div class="border container" style="margin-bottom: 10px;" align="center">
-        <p style="margin-top: 17px; margin-bottom: 12px;"><b> Jenis Produk </b></p>
-          <button style="margin-bottom: 10px;" type="button" class="btn btn-info"> HP </button>
-          <button style="margin-bottom: 10px;" type="button" class="btn btn-info"> MSI </button>
-          <button style="margin-bottom: 10px;" type="button" class="btn btn-info"> MSI </button>
-          <button style="margin-bottom: 10px;" type="button" class="btn btn-info"> MSI </button>
-      </div>
+    <div class="container">
+    <div class="border" style="margin-bottom: 10px;" align="center">
+        <h4 class="text-center" style="margin-top: 17px; margin-bottom: 12px; font-family: sans-serif;"><b> Nama Produk </b></h4>
+          <a class="btn" style="margin-bottom: 10px; background-color: aquamarine;" href="https://www.hp.com/" role="button"> HP </a>
+          <a class="btn" style="margin-bottom: 10px; background-color: aquamarine;" href="https://www.asus.com/id/in/" role="button"> Asus </a>
+          <a class="btn" style="margin-bottom: 10px; background-color: aquamarine;" href="https://www.lenovo.com/id/" role="button"> Lenovo </a>
+          <a class="btn" style="margin-bottom: 10px; background-color: aquamarine;" href="https://www.MSI.com/" role="button"> MSI </a>
+    </div>
+    </div>
 
       <!-- produk -->
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-4">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                  <div class="card">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="card" style="margin-bottom: 20px;">
                     <img src="https://metrokomputer.id/wp-content/uploads/2023/07/1-65.png" class="card-img-top" alt="Laptop HP">
                     <div class="card-body">
                         <hr>
@@ -87,19 +90,19 @@
                                   </svg><p> HP </p>
                                 </div>
                                 <div style="margin-bottom: 5px;">
-                                  <span class="badge bg-warning text-dark"> Gaming </span>
+                                  <span class="badge bg-warning text-white"> Gaming </span>
                               </div>                               
-                          <a href="#" class="btn btn-info"> Detail </a>
+                          <a href="#" class="btn text-white" style="background-color: limegreen;"> Detail </a>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-3">
-                  <div class="card">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="card" style="margin-bottom: 20px;">
                     <img src="https://www.jktgadget.com/wp-content/uploads/2022/07/ASUS-G713RW-2.jpg" class="card-img-top" alt="Laptop Asus">
                     <div class="card-body">
                         <hr>
-                            <h5 class="card-title"> ASUS GAMING LAPTOP ROG STRIX-G17 G713RW </h5>
+                            <h5 class="card-title"> ASUS GAMING LAPTOP ROG STRIX-G17 </h5>
                             <p class="card-text"> Rp30.999.000 </p>
                               <hr>
                                 <div style="display: flex; justify-content: stretch;">
@@ -108,23 +111,23 @@
                                   </svg><p style="margin-left: 5px; margin-right: 2px;"> stock 7 <b>|</b></p>
                                   <svg style="margin-top: 5px; margin-right: 2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
                                     <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
-                                  </svg><p> Asus ROG </p>
+                                  </svg><p> Asus </p>
                                 </div>
                                 <div style="margin-bottom: 5px;">
-                                  <span class="badge bg-warning text-dark"> Gaming </span>
+                                  <span class="badge bg-warning text-white"> Gaming </span>
                               </div> 
-                          <a href="#" class="btn btn-info"> Detail </a>
+                          <a href="#" class="btn text-white" style="background-color: limegreen;"> Detail </a>
                     </div>
                   </div>
                 </div>
             
-                <div class="col-3">
-                  <div class="card">
-                    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/1/13/95da6558-9c3a-4d83-9c7a-87b09b45637e.jpg" class="card-img-top" alt="Laptop Lenovo">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="card" style="margin-bottom: 20px;">
+                    <img src="https://www.softcom.co.id/wp-content/uploads/2023/06/loq6.jpg" class="card-img-top" alt="Laptop Lenovo">
                     <div class="card-body">
                         <hr>
-                            <h5 class="card-title"> LENOVO IDEAPAD GAMING 3-15ACH6 </h5>
-                            <p class="card-text"> Rp12.999.000 </p>
+                            <h5 class="card-title"> Lenovo LOQ 15APH8-82XT003CID  </h5>
+                            <p class="card-text"> Rp17.499.000 </p>
                               <hr>
                               <div style="display: flex; justify-content: stretch;">
                                 <svg style="margin-top: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
@@ -135,19 +138,19 @@
                                 </svg><p> Lenovo </p>
                               </div>
                               <div style="margin-bottom: 5px;">
-                                <span class="badge bg-warning text-dark"> Gaming </span>
+                                <span class="badge bg-warning text-white"> Gaming </span>
                             </div> 
-                          <a href="#" class="btn btn-info"> Detail </a>
+                          <a href="#" class="btn text-white" style="background-color: limegreen;"> Detail </a>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-3">
-                  <div class="card">
+                <div class="container col-lg-3 col-md-4 col-sm-6">
+                  <div class="card" style="margin-bottom: 20px;">
                     <img src="https://myhartono.com/images/detailed/363/9S7-158571-1002.jpg" class="card-img-top" alt="Laptop MSI">
                     <div class="card-body">
                         <hr>
-                            <h5 class="card-title"> MSI GAMING LAPTOP NOTEBOOK KATANA 15 </h5>
+                            <h5 class="card-title"> MSI GAMING NOTEBOOK KATANA 15 </h5>
                             <p class="card-text"> Rp16.399.000 </p>
                               <hr>
                               <div style="display: flex; justify-content: stretch;">
@@ -159,15 +162,16 @@
                                 </svg><p> MSI </p>
                               </div>
                               <div style="margin-bottom: 5px;">
-                                <span class="badge bg-warning text-dark"> Gaming </span>
+                                <span class="badge bg-warning text-white"> Gaming </span>
                             </div> 
-                          <a href="MSI.html" class="btn btn-info"> Detail </a>
+                          <a href="MSI.html" class="btn text-white" style="background-color: limegreen;"> Detail </a>
                     </div>
                   </div>
                 </div>
               </div>
         </div>
       </div>
+  </div>
       <br>
 
       <!-- footer -->
